@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/icon_list"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/gradient"
+        android:background="@drawable/round_corner"/>
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/childlay"
+        android:layout_toRightOf="@+id/icon_list">
+
+    <TextView
+        android:id="@+id/name_for_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:textColor="#4d4d4d" />
+        <TextView
+            android:id="@+id/phone_for_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone no"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_below="@+id/name_for_list"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/call_icon"
+        android:id="@+id/call_icon"/>
+</RelativeLayout>

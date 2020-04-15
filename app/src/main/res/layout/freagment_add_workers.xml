@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_frag_add_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add a worker"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/addSpinnerWorkerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_frag_add_worker"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_frg_worker_name"
+        android:layout_below="@+id/addSpinnerWorkerType"
+        android:layout_margin="25dp"
+        android:hint="name"/>
+    <EditText
+        android:hint="mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_frg_worker_mobile"
+        android:inputType="number"
+        android:layout_below="@+id/edt_frg_worker_name"
+        android:layout_margin="25dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_frg_workers"
+        android:layout_below="@id/edt_frg_worker_mobile"
+        android:layout_marginTop="10dp"
+        android:text="add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"/>
+</RelativeLayout>

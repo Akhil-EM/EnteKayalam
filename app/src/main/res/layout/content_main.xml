@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:padding="8dp">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:background="@color/colorAccent">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:background="@color/colorAccent"
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="1dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="2"
+            app:sliderStartAutoCycle="true" />
+
+    </androidx.cardview.widget.CardView>
+    <!--    first frame-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/frm1">
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnannouncement"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/announcement"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner" />
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btnannouncement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_announce_mal"
+                android:textColor="@color/white">
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnblood_bank"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/blood_icon"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btnblood_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_blood_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--    end of frm1-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frm1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="67dp"
+        android:paddingRight="67dp"
+        android:id="@+id/frm2">
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_bus_time"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/round_corner"
+                app:srcCompat="@drawable/bus_time"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_bus_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_bus_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_hospitals"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/hospitals"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_hospitals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_hosp_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--    end of frm2-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frm2"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/frm3">
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_vehicles"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/vehicles"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner" />
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_vehicles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_vehi_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_emergency"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:srcCompat="@drawable/emergency"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner_orenge"
+                />
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_emer_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_shops"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/shops"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"/>
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_shops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_shop_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--   end of frm 3-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frm3"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="67dp"
+        android:paddingRight="67dp"
+        android:id="@+id/frm4">
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_workers"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/workers"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner"
+                />
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_workers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_work_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_sthapanagal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/sthapanagal"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:scaleType="center"/>
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_sthapanagal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_offi_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--    end of frame 4-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frm4"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/frm5">
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_social_rep"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/jana_prethinidhi"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner"
+                />
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_social_rep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_rep_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+            <ImageButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btn_sangadanakal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/sangadakal"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@drawable/round_corner"
+                android:layout_gravity="center"
+                android:scaleType="center"/>
+            <TextView
+                android:textSize="12sp"
+                android:layout_below="@+id/btn_sangadanakal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_org_mal"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

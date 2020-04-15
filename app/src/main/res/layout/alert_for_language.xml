@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:padding="10dp">
+
+        <TableRow
+            android:padding="10dp"
+            android:id="@+id/tab1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    മലയാളം"
+                android:id="@+id/checkBoxmalayalam"
+                android:textColor="@color/black"
+                android:layout_above="@+id/escudo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_below="@+id/tab1"
+            android:padding="10dp"
+            android:id="@+id/tab2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     English"
+                    android:id="@+id/checkBoxenglish"
+                    android:textColor="@color/black"
+                    android:layout_above="@+id/escudo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_below="@+id/tab2"
+            android:padding="10dp"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ok"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancel"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"/>
+        </TableRow>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

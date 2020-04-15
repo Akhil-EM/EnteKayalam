@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EnteKayalam</string>
+    <string name="action_settings">Settings</string>
+    <string name="blood_bank">Blood Bank</string>
+    <string name="app_name_mala">എന്റെ കായലം</string>
+    <string name="app_name_eng">EnteKayalam</string>
+    <string name="btn_announce_eng">Announcements</string>
+    <string name="btn_announce_mal">അറിയിപ്പുകൾ</string>
+    <string name="btn_blood_mal"> ബ്ലഡ്‌ ബാങ്ക്</string>
+    <string name="btn_blood_eng">Blood Bank</string>
+    <string name="btn_bus_mal">ബസ് സമയം</string>
+    <string name="btn_bus_eng">Bus Time</string>
+    <string name="btn_hosp_mal">ആശുപത്രികൾ</string>
+    <string name="btn_hosp_eng">Hospitals</string>
+    <string name="btn_vehi_mal">വാഹനങ്ങൾ</string>
+    <string name="btn_vehi_eng">Vehicles</string>
+    <string name="btn_emer_mal">എമർജൻസി</string>
+    <string name="btn_emer_eng">Emergency</string>
+    <string name="btn_shop_mal">കടകൾ</string>
+    <string name="btn_shop_eng">Shops</string>
+    <string name="btn_work_mal">തൊഴിലാളികൾ</string>
+    <string name="btn_work_eng">Workers</string>
+    <string name="btn_offi_mal">സ്ഥാപനങ്ങൾ</string>
+    <string name="btn_offi_eng">Offices</string>
+    <string name="btn_rep_mal">ജനപ്രതിനിധികൾ</string>
+    <string name="btn_rep_eng">Social rep</string>
+    <string name="btn_org_mal">സംഘടനകൾ</string>
+    <string name="btn_org_eng">Organizations</string>
+    <string name="connection_info_head">Please check Internet access</string>
+    <string name="connection_indicator">You need to have Mobile data Wifi to access Internet.Press ok to open Settings.</string>
+    <string name="dialoge_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+</resources>

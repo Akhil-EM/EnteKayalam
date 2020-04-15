@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.entenadu2.MainActivity">
+    <item
+        android:id="@+id/first_settings"
+        android:orderInCategory="100"
+        android:title="first settings"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/admin"
+        android:orderInCategory="100"
+        android:title="admin"
+        app:showAsAction="never" ></item>
+    <item
+        android:id="@+id/add_spinner_menu"
+        android:orderInCategory="100"
+        android:title="add spinner item"
+        app:showAsAction="never" ></item>
+    <item
+        android:id="@+id/view_SqlLite"
+        android:orderInCategory="100"
+        android:title="view sqlite"
+        app:showAsAction="never" ></item>
+    <item
+        android:id="@+id/delete_sqlite"
+        android:orderInCategory="100"
+        android:title="delete sqlite"
+        app:showAsAction="never" >
+
+    </item>
+    <item
+        android:id="@+id/select_language"
+        android:orderInCategory="100"
+        android:title="select language"
+        app:showAsAction="never" ></item>
+</menu>

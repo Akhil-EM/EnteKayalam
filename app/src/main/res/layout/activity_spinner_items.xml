@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spinner_items">
+
+    <Spinner
+        android:id="@+id/add_spinner_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:layout_below="@+id/add_spinner_items"
+        android:id="@+id/edtadd_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:inputType="textPersonName"
+        android:hint="type here"
+        android:visibility="gone"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/add_spinner_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtadd_spinner"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:text="add" />
+</RelativeLayout>

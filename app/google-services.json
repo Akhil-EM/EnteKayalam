@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "510307584832",
+    "firebase_url": "https://entenadu2-29073.firebaseio.com",
+    "project_id": "entenadu2-29073",
+    "storage_bucket": "entenadu2-29073.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510307584832:android:cc135a604334431fb088a5",
+        "android_client_info": {
+          "package_name": "com.example.entenadu2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510307584832-o9q3kggl6745a5ee4m966qqo23gueg4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.entenadu2",
+            "certificate_hash": "c701bbe3412daf2573f3e483609a7fec98694133"
+          }
+        },
+        {
+          "client_id": "510307584832-dq5e3kcutb8l5ufchkhjcoh7aat5gvb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvtp9wu_4axEcB2HNBVh5nVbjetHlJZio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510307584832-dq5e3kcutb8l5ufchkhjcoh7aat5gvb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
